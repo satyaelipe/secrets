@@ -1,9 +1,12 @@
+---
 apiVersion: apps/v1beta2
 kind: Deployment
 metadata:
   name: mysql
   labels:
     name: mysql
+  annotations:
+    flux.weave.works/automated: 'true'
 spec:
   selector:
     matchLabels:
@@ -20,11 +23,11 @@ spec:
         - mountPath: /var/lib/mysql
           name: barfoo
         env:
-          - name: MYSQL_ROOT_PASSWORD
-            valueFrom:
-              secretKeyRef:
-                name: mysql
-                key: password
+        - name: MYSQL_ROOT_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: mysql
+              key: password
       volumes:
       - name: barfoo
         persistentVolumeClaim:
