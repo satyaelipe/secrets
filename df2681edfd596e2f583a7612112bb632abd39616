@@ -1,0 +1,1 @@
+{"jobID":"53592ee9-7afc-3e50-2434-46c133dba25c","spec":{"type":"policy","cause":{"Message":"","User":"Satya vsp \u003cveeravsp@outlook.com\u003e"},"spec":{"default:deployment/mysql":{"add":{"automated":"true"},"remove":null}}},"result":null}
