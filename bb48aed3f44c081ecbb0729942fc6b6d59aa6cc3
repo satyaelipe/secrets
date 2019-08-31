@@ -1,0 +1,1 @@
+{"jobID":"e9858c90-0fc5-6257-fed4-9b68dcb247f2","spec":{"type":"auto","cause":{"Message":"","User":""},"spec":{"Changes":[{"WorkloadID":"default:deployment/mysql","Container":{"Name":"db","Image":"mysql:5.5"},"ImageID":"mysql:5.6"}]}},"result":{"default:deployment/mysql":{"Status":"success","PerContainer":[{"Container":"db","Current":"mysql:5.5","Target":"mysql:5.6"}]}}}
